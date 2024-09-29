@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Gerenciamento de Usuários - Projeto React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi desenvolvido com o intuito de criar uma aplicação web interativa e estilizada que permita o gerenciamento de usuários. A aplicação utiliza React, manipulando estados, props, children e integrando com uma API externa para realizar operações de listagem, adição e exclusão de usuários.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- Listar usuários utilizando a API **JSONPlaceholder**.
+- Adicionar novos usuários.
+- Excluir usuários existentes.
+- Exibir mensagens de sucesso ou erro para cada operação.
+- Verificar o status da API (online ou offline).
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Biblioteca JavaScript para criação da interface.
+- **CSS**: Utilizado para estilização dos componentes.
+- **API JSONPlaceholder**: API externa usada para simular operações CRUD com usuários.
+- **Hooks React**: Utilização dos hooks `useState` e `useEffect` para gerenciamento de estados e ciclo de vida dos componentes.
+- **Async/Await**: Para lidar com operações assíncronas nas requisições HTTP (GET, POST, DELETE).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pré-requisitos
 
-### `npm test`
+Antes de começar, certifique-se de ter o **Node.js** instalado em sua máquina.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalação e Execução
 
-### `npm run build`
+Siga os passos abaixo para rodar o projeto localmente:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone o repositório do projeto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/hebson-sousa/User-Management.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Acesse o diretório do projeto:
 
-### `npm run eject`
+   ```bash
+   cd user-management
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Instale as dependências necessárias:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Inicie o servidor de desenvolvimento:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+5. Acesse o projeto no navegador através da URL:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```
+   http://localhost:3000
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Estrutura do Projeto
 
-### Code Splitting
+- **Header**: Componente de cabeçalho da aplicação.
+- **UserForm**: Componente responsável por adicionar novos usuários.
+- **UserList**: Componente que exibe a lista de usuários.
+- **UserItem**: Componente que representa cada usuário individual.
+- **Notification**: Componente para exibir notificações (sucesso/erro).
+- **ApiStatus**: Componente para verificar o status da API.
+- **Footer**: Componente de rodapé da aplicação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Como Funciona
 
-### Analyzing the Bundle Size
+- A aplicação faz uma requisição para a API **JSONPlaceholder** para buscar uma lista de usuários.
+- O usuário pode adicionar um novo usuário através do formulário e excluir usuários existentes na lista.
+- O status da API é monitorado e exibido no rodapé.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Autor
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido por **Hebson Sousa**.
